@@ -12,13 +12,14 @@ public class MenuManager : MonoBehaviour
     public RotateModel rotate;
     [Header("Menu")]
     public GameObject environmentMenu;
-    public GameObject effectMenu;
     public GameObject materialMenu;
     [Header("Environments")]
     public GameObject football;
     public GameObject weapon;
     public GameObject exhibition;
     public GameObject space2;
+    public GameObject concert;
+    public GameObject cube;
     [Header("Materials")]
     public Material normal;
     public Material holo;
@@ -70,10 +71,7 @@ public class MenuManager : MonoBehaviour
     {
         environmentMenu.SetActive(true);
     }
-    public void OpenEffectMenu()
-    {
-        effectMenu.SetActive(true);
-    }
+
     public void OpenMatMenu()
     {
         materialMenu.SetActive(true);
@@ -111,6 +109,8 @@ public class MenuManager : MonoBehaviour
         exhibition.SetActive(false);
         space2.SetActive(false);
         environmentMenu.SetActive(false);
+        concert.SetActive(false);
+        cube.SetActive(false);
     }
     public void WeaponScene()
     {
@@ -120,6 +120,8 @@ public class MenuManager : MonoBehaviour
         exhibition.SetActive(false);
         space2.SetActive(false);
         environmentMenu.SetActive(false);
+        concert.SetActive(false);
+        cube.SetActive(false);
     }
     public void ExhibScene()
     {
@@ -128,6 +130,8 @@ public class MenuManager : MonoBehaviour
         exhibition.SetActive(true);
         space2.SetActive(false);
         environmentMenu.SetActive(false);
+        concert.SetActive(false);
+        cube.SetActive(false);
     }
 
 
@@ -138,6 +142,18 @@ public class MenuManager : MonoBehaviour
         exhibition.SetActive(false);
         space2.SetActive(true);
         environmentMenu.SetActive(false);
+        concert.SetActive(false);
+        cube.SetActive(false);
+    }
+    public void ConcertScene()
+    {
+        football.SetActive(false);
+        weapon.SetActive(false);
+        exhibition.SetActive(false);
+        space2.SetActive(false);
+        environmentMenu.SetActive(false);
+        concert.SetActive(true);
+        cube.SetActive(false);
     }
     public void HeartEffect()
     {
